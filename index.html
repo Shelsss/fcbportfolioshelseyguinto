@@ -1,0 +1,123 @@
+
+<!--responsible for the structure of the website --> 
+<!-- alt + z to word wrap -->
+<!-- to comment press ctrl + / -->
+<!-- to make it easier, press h1 + tab to create open and close tag automatically -->
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <!-- head tag which is not visible in the browser -->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <meta property="og:title" content="I coded a game with Zuitt!" />
+        <meta property="og:description" content="This Game Development project is powered by Zuitt Coding Bootcamp" />
+        <meta property="og:site_name" content="I coded a game with Zuitt!" />
+        <meta property="og:image" content="[your-deployment-link]/images/story-thumbnail-2048.jpg" />
+        <meta property="og:image:secure_url" content="[your-deployment-link]" />
+
+        <title>2048</title>
+
+        <!-- Link style.css -->
+        <link rel="stylesheet" type="text/css" href="style.css">
+
+    </head>
+
+            <!-- body tag - contains the actual content of the HTML that are visible in the web browser -->
+            <body>
+           
+                <div class="container">
+
+                    <h1>2048</h1>
+                    <h2>Created by: Shelsey Guinto </h2>
+                    
+                    <!-- (hr) the horizontal rule in the website-->
+                    <hr id = "top-line"/>
+
+                    <div class = "header-container">
+                        <div class = "score-container">
+                            <div class = "score-label">
+                                Score:
+                            </div>
+        
+                            <div id ="score">
+                                0
+                            </div>
+        
+                        </div>
+        
+                        <div class = "share-button-container">
+                            <div class = "share-label">
+                                Share:
+                            </div>
+                            <div class = "share-icons">
+                                <a href="https://www.facebook.com/sharer/sharer.php?u=[your-deployment-link]" target = "_blank">
+                                    <img src="./images/share_2048-fb.svg" id ="fb-img">
+                                </a>
+                            </div>
+        
+                        </div>
+        
+                    </div>
+    
+                    <!-- SCORE -->
+                    <!-- <h2>Score: <span id = "score">0</span></h2> -->
+    
+                    <!-- // div tag - is a versatile container used to group and style elements -->
+                    <!-- // id - for identification, to know each particular div; UNIQUE-->
+                    <!-- ID = solo only; CLASS = Group -->
+    
+                    <div id = "board">
+                        
+                        <!-- r = row; c = column; ro, c0, to identify the position -->
+                        <!-- in programming they always start in 0 (zero) -->
+    
+                      
+                        <!-- FIRST ROW -->
+                        <!-- <div class = "tile x2">[r0,c0]</div>
+                        <div class = "tile x4">[r0,c1]</div>
+                        <div class = "tile x8">[r0,c2]</div>
+                        <div class = "tile x16">[r0,c3]</div> -->
+    
+                        <!-- SECOND ROW -->
+                        <!-- <div class = "tile x32">[r1,c0]</div>
+                        <div class = "tile x64">[r1,c1]</div>
+                        <div class = "tile x128">[r1,c2]</div>
+                        <div class = "tile x256">[r1,c3]</div> -->
+    
+                        <!-- THIRD ROW -->
+                        <!-- <div class = "tile x512">[r2,c0]</div>
+                        <div class = "tile x1024">[r2,c1]</div>
+                        <div class = "tile x2048">[r2,c2]</div>
+                        <div class = "tile x4096">[r2,c3]</div> -->
+    
+                        <!-- FOURTH ROW -->
+                        <!-- <div class = "tile x8192">[r3,c0]</div>
+                        <div class = "tile">[r3,c1]</div>
+                        <div class = "tile">[r3,c2]</div>
+                        <div class = "tile">[r3,c3]</div> -->
+                    
+                    
+                        
+    
+                    </div>
+    
+    
+
+                </div>
+            
+     
+                <!-- linked the javascript -->
+                <!-- to check if it's already connected, go to browser, then inspect and find the "console" -->
+            <script type="text/javascript" src ="./logic.js"></script>
+
+            </body>
+
+
+
+
+</html>
+
